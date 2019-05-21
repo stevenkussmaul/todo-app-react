@@ -41,7 +41,7 @@ class App extends Component {
     console.log(this.state.todos)
     return (
       <div className="App">
-        <h1>hello world</h1>
+        <h1>To-Do List</h1>
         <Todos todos={this.state.todos} markComplete={this.markComplete}/>
       </div>
     );
