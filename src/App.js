@@ -7,26 +7,34 @@ class App extends Component {
     todos: 
     [
       {
-        id: '1',
-        title: 'trash',
+        id: 1,
+        title: 'Take out the trash',
         completed: false
       },
       {
-        id: '2',
+        id: 2,
         title: 'Dinner',
         completed: false
       },
       {
-        id: '3',
-        title: 'walk Dog',
+        id: 3,
+        title: 'Walk the Dog',
         completed: false
       }
 
     ]
   }
 
-  markComplete = () => {
-    
+  //toggle item marked as complete
+  markComplete = (id) => {
+    console.log(id);
+      this.setState({todos: this.state.todos.map(todo => {
+        if (todo.id === id){
+          todo.completed = !todo.completed
+        }
+        return todo;
+      })
+    })
   }
 
   render() {
