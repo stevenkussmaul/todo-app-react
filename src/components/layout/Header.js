@@ -9,7 +9,10 @@ function Header() {
 }
 
 const headerStyle = {
-    color: 'blue'
+    background: 'darkgray',
+    color: 'white',
+    textAlign: 'center',
+    padding: '10px'
 }
 
 export default Header;
